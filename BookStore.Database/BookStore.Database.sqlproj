@@ -68,9 +68,8 @@
     <Build Include="dbo\Tables\Publisher.sql" />
     <Build Include="dbo\Tables\Book.sql" />
     <Build Include="dbo\Tables\BookAuthors.sql" />
-    <None Include="Scipts\Feature\AuthorsToBook.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
+    <None Include="DatabaseScript.sql" />
   </ItemGroup>
 </Project>

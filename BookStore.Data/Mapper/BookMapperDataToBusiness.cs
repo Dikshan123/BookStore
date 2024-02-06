@@ -21,7 +21,7 @@ namespace BookStore.Repositoy.Mapper
                 Authors = book.Authors.Select(a => BookStoreAuthorDataToBusiness(a)).ToList()
             };
         }
-        public static Author BookStoreAuthorDataToBusiness(models.Author author)
+        public static Author? BookStoreAuthorDataToBusiness(models.Author author)
         {
             if (author == null)
                 return null;
@@ -32,7 +32,7 @@ namespace BookStore.Repositoy.Mapper
                 AuthorContact = BookStoreAuthorContactDataToBusiness(author.AuthorContact)
             };
         }
-        public static AuthorContact BookStoreAuthorContactDataToBusiness(models.AuthorContact contact)
+        public static AuthorContact? BookStoreAuthorContactDataToBusiness(models.AuthorContact contact)
         {
             if (contact == null)
                 return null;

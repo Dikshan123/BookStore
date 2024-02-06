@@ -1,2 +1,0 @@
-﻿INSERT INTO BookAuthors
-SELECT 1,1
